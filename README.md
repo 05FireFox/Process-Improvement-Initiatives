@@ -1,16 +1,62 @@
-# React + Vite
+# IT Support Process Improvement Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Role:** Analyst Trainee / Frontend Developer Candidate
+**Tech Stack:** React, Tailwind CSS, Recharts, Vite
 
-Currently, two official plugins are available:
+## 📌 Project Overview
+This project is a **Concept Validation Dashboard** designed to demonstrate data-driven decision-making in an IT Support environment. It was built to solve a specific business problem: **identifying the root cause of high SLA breaches during night shifts.**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+The dashboard visualizes key performance indicators (KPIs) to correlate **Staffing Levels** with **Resolution Times**, providing actionable insights for process improvement.
 
-## React Compiler
+## 💼 Business Scenario (The "Why")
+**Observation:** The IT Operations team noticed a spike in SLA breaches despite overall ticket volume remaining within capacity.
+**Data Analysis:**
+- **Day Shift:** High Volume, Fast Resolution (Standard Operation).
+- **Night Shift:** Low Volume, **400% Slower Resolution** (Anomaly).
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+**Conclusion:** The issue is not workload (volume), but **capability**. The Night Shift typically relies on junior staff who lack Level 2 support permissions, leading to long hold times for simple escalations.
 
-## Expanding the ESLint configuration
+**Recommendation:** Reallocate 2 Senior Analysts to a rotational Night Shift roster to reduce average resolution time and eliminate SLA breaches.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🚀 Key Features
+- **KPI Metrics Cards**: Instant view of Total Tickets, Average Resolution Time (Blended), and SLA Breach Rate.
+- **Shift Analysis Chart (Bar)**: A visual proof-point contrasting Day vs. Night shift efficiency.
+- **Hourly Workload Trends (Line)**: Demonstrates that volume is NOT the root cause of the night shift delays.
+- **Actionable Insights Panel**: Auto-generated recommendations based on the data analysis, ready for stakeholder presentation.
+
+## 🛠️ Technical Implementation
+- **React (Vite)**: Selected for component modularity and high performance.
+- **Recharts**: Used for composable, responsive data visualization.
+- **Tailwind CSS**: Implemented for rapid, professional styling consistent with corporate design systems.
+- **Lucide React**: Vector iconography for clear visual hierarchy.
+
+## 💻 Getting Started
+
+### Prerequisites
+- Node.js (v18+ recommended)
+
+### Installation
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/05FireFox/Process-Improvement-Initiatives.git
+   ```
+2. Navigate to the project directory:
+   ```bash
+   cd Process-Improvement-Initiatives
+   ```
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+### Running Locally
+Start the development server:
+```bash
+npm run dev
+```
+
+## 📸 Dashboard Preview
+*(Add a screenshot of your dashboard here)*
+
+---
+*This project was built to demonstrate proficiency in both **Technical Implementation (React/Frontend)** and **Business Analysis (Process Improvement)**.*
